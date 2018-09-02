@@ -1,11 +1,27 @@
 {
-  "name": "nodetest",
+  "name": "t",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.5.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woibldd/nodejs-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/woibldd/nodejs-test/issues"
+  },
+  "homepage": "https://github.com/woibldd/nodejs-test#readme",
+  "keywords": [],
+  "description": ""
 }

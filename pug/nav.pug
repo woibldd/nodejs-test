@@ -1,0 +1,21 @@
+ul.layui-nav
+    li.layui-nav-item
+        a(href="#") 最新活动
+    li.layui-nav-item.layui-this
+        a(href="javascript:;") 产品
+        dl.layui-nav-child
+            each val in ['小浣熊','统一一百','老坛酸菜']
+                dd.
+                    #[a(href="#") #{val}]
+    li.layui-nav-item
+        a(href="#") 大数据
+    li.layui-nav-item
+        a(href="javascript:;") 解决放啊
+        dl.layui-nav-child
+            each val in ['移动模块','后台模块', '选中项', '电商平台']
+                dd.
+                    #[a(href="#") #{val}]
+    li.layui-nav-item
+        a(href="") 社区
+ 
+

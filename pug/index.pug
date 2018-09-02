@@ -1,0 +1,41 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		title #{title}
+		link(rel="stylesheet" href="./layui/css/layui.css")
+	body
+		include ./nav.pug
+		
+		fieldset.layui-elem-field.site-demo-button(style={'margin-Top': '30px', color: 'red'}) 
+			legend 按钮主题
+			div
+				button.layui-btn.layui-btn-primary 按钮一	
+				button.layui-btn 按钮二	
+				button.layui-btn.layui-btn-normal 按钮三	
+				button.layui-btn.layui-btn-warm 按钮4	
+				button.layui-btn.layui-btn-danger 按钮5	
+				button.layui-btn.layui-btn-disabled 按钮6666 
+
+		div.layui-carousel#test1('lay-filter'='test1')
+			div(carousel-item="")
+				each val in ['选项1','选项2','选项3','选项4','选项5']
+					div= val 
+		
+		script(src="./layui/layui.js")
+		script.
+			layui.use('element', function(){
+				let element = layui.element;
+
+				//- element.on('nav(demo)', function(elem){
+				//- 	layer.msg(elem.text())
+				//- })
+			})
+			layui.use(['carousel', 'form'], function(){
+				var carousel = layui.carousel, from = layui.form;
+
+				carousel.render({
+					elem: '#test1',
+					arrow: 'always'
+				})
+			})
